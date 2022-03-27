@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+    box-sizing: border-box;
+}
+.wrapper{
+    /* border: 3px solid black; */
+    height: 100vh;
+}
+.top-bar{
+    width: 80%;
+    height: 70px;
+    /* border: 3px solid black; */
+    margin: 20px auto;
+
+}
+.logo{
+    /* border: 3px solid black; */
+    width: 13%;
+    float: left;
+}
+.logo img{
+/* border: 3px solid black;  */
+
+    width: 107px;
+    height: 77px;
+    cursor: pointer;
+}
+.menu-bar{
+    /* border: 3px solid black; */
+
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+.menu-bar ul li{
+    /* border: 3px solid black; */
+
+    list-style: none;
+    display: inline-block;
+    color: black;
+ 
+    margin: 9px 30px;
+    padding-top: 10px;
+    padding-left: 3px ;
+    padding-right: 3px ;
+    cursor: pointer;
+}
+
+.active, .menu-bar ul li:hover{
+    border-top: 3px solid #2c97e4;
+}
+
+.search-box{
+    /* border: 3px solid black; */
+
+    width: 20%;
+    float: right;
+}
+.input-search{
+    display: inline-flex;
+    border-bottom: 2px solid #2c97e4;
+    margin: 11px auto;
+}
+.input-search input{
+    float: right; 
+    padding: 5px;
+   
+    outline: none;
+    border: 0;
+    
+}
+.search-icon .fa-solid{
+    color: #2c97e4;
+}
+.hero{
+    /* border: 2px solid black; */
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.hero-text{
+    /* border: 2px solid black; */
+width: 60%;
+height: 100%;
+/* float: left; */
+}
+
+.hero-text h1{
+    /* border: 2px solid black; */
+    margin: 50px 0 36px 70px;
+    
+    line-height: 41px;
+
+}
+.hero-text h1::after{
+    content: '';
+    width: 223px;
+    height: 2px;
+    background: #2c97e4;
+    position: absolute;
+    top: 22%;
+    left: 33%;
+}
+.hero-text p{
+padding-left: 70px;
+line-height: 25px;
+}
+.hero-text .play-btn{
+    /* border: 2px solid black; */
+
+width: 50px;
+border-radius: 50%;
+cursor: pointer;
+margin: 0 30px 0 70px;
+vertical-align: middle;
+box-shadow: 0 0  16px 2px rgba(8, 148, 235, 0.55);
+/* box-shadow: offset x offset y  blur spread radius(kitna failana hai ) rgba(color+last wala opacitybatata hai) */
+}
+.hero-text span{
+    position: absolute;
+    top: 231px;
+    left: -2px;
+    /* border: 3px solid black; */
+    
+    margin: 50px 0;
+
+}
+.hero-text span::after{
+    content: '';
+    width: 123px;
+    height: 2px;
+    background: #2c97e4;
+    position: absolute;
+    top: 45px;
+    left: 188px;
+}
+.hero-banner{
+
+    /* border: 2px solid rgb(8, 102, 0); */
+    width:40% ;
+    height: 100%;
+float: right;
+    text-align: center;
+}
+.hero-banner img{
+   
+width: 100%;
+margin: 106px 0;
+}
+.wrapper small{
+    margin-left: 216px;
+}
+.wrapper small b{
+margin-right: 55px;
+}
+
+
+.shopping-box{
+    /* border: 2px solid red; */
+    position: absolute;
+    top:-80px;
+    right: 0;
+    width: 140px;
+    height: 200px;
+    background-image: linear-gradient(#2c97e4,#d7e6fa);
+    border-radius: 0 0 60px 240px;
+}
+
+.shopping-box .fa-solid{
+   
+color: white;
+    /* border: 3px solid black; */
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    right: 80px;
+
+}
+.social-links{
+    /* border: 2px solid black; */
+    width: 145px;
+    height: 390px;
+    position: absolute;
+    top: 150px;
+    left: -39px;
+    background-image: linear-gradient(#2c97e4,#d7e6fa);
+    border-top-right-radius: 275px 309px;
+    border-bottom-right-radius: 328px 627px;
+    border-bottom-left-radius: 108px 245px;
+}
+
+.social-links ul{
+/* border: 3px solid black; */
+color: white;
+display: block;
+margin-top:10px;
+margin-left: 50px;
+
+}
+
+.social-links ul li{
+    /* border: 3px solid black; */
+    list-style: none;
+    margin-top: 30px;
+}
+.social-links ul li .fa-brands{
+cursor: pointer;
+font-size: 25px;  /* with this we can icrease the icons size*/
+z-index: 1;
+}
+
+.bubbles-outside{
+    width: 120px;
+    opacity: 0.6;
+    z-index: -1;
+    position: absolute;
+    left: 133px;
+    bottom: -4px;
+}
+.bubbles-inside{
+    width: 120px;
+    opacity: 0.6;
+    z-index: -1;
+    position: absolute;
+    top: 81px;
+    left: 591px;
+}
